@@ -38,7 +38,7 @@ public class BankBook implements Account {
 	// BankBook.bank ---> 클래스변수 호출하는 모양
 	// 위치 : 필드 ---> {인변, 상수, 클래스변수} < 멤변, 
 /*====== Field =====*/
-	private static String BANK ; // 대문자로되어있으면 고정된 값으로 된다
+	public static String BANK ; // 대문자로되어있으면 고정된 값으로 된다
 	private int bankbookNo;
 	private String name;
 	private int money, pass;
