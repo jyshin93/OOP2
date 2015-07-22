@@ -2,16 +2,8 @@ package abstraction2;
 
 public class ShieldRobot extends BasicBot {
 	private int shieldPoint;
-	public void shield(int shieldPoint){
+	public void setShieldPoint(int shieldPoint) {
 		this.shieldPoint = shieldPoint;
-	}
-	@Override
-	public void charge(int energy) {
-		super.charge(energy);
-	}
-	@Override
-	public void run(int speed) {
-		super.run(speed);
 	}
 	@Override
 	public void status() {

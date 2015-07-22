@@ -14,18 +14,20 @@ public class RobotMain {
 		 
 		 * */
 		GunRobot gunRobot = new GunRobot();
-		gunRobot.attack(50);
+		gunRobot.setAttackPoint(50);
 		gunRobot.charge(10);
 		gunRobot.run(10);
+		// gunRobot.status();
 		ShieldRobot shieldRobot = new ShieldRobot();
-		shieldRobot.shield(50);
+		shieldRobot.setShieldPoint(50);
 		shieldRobot.charge(20);
 		shieldRobot.run(20);
+		// shieldRobot.status();
 		Robot[] bot = new Robot[2];
 		bot[0] = gunRobot;
 		bot[1] = shieldRobot;
 		
-		for(Robot robot : bot){
+		for(Robot robot : bot){ // bot 배열안에있는 Robot robot
 			robot.status();
 		}
 	}

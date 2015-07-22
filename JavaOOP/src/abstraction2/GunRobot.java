@@ -3,15 +3,7 @@ package abstraction2;
 public class GunRobot extends BasicBot{
 	private int attackPoint;
 	
-	@Override
-	public void charge(int energy) {
-		super.charge(energy);
-	}
-	@Override
-	public void run(int speed) {
-		super.run(speed);
-	}
-	public void attack(int attackPoint){
+	public void setAttackPoint(int attackPoint) {
 		this.attackPoint = attackPoint;
 	}
 	@Override
