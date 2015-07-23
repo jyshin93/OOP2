@@ -1,6 +1,6 @@
 package bank;
 
-public class BankBook implements Account{
+public class BankBook {
 	public static String BANK ;
 	private int bankbookNo;
 	private String name;
@@ -15,39 +15,23 @@ public class BankBook implements Account{
 	}
 	
 /*=====Member Method=====*/
-	public int  getBankbookNo() {
-		return bankbookNo;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public int getMoney() {
-		return money;
-	}
 	
-	public int getPass() {
-		return pass;
-	}
-	
+
 	public void setPass(int pass) {
 		this.pass = pass;
 	}
 	
-
-	@Override
-	public String toString() { 
+	public String showAccount() { 
 		
 		return "===============\n"
 				+ "["+BANK+"]\n"
 				+ "계좌번호 : "+bankbookNo+"\n"
 				+ "이름:" +name+"\n"
-				+msg
+				+ msg
 				+ "잔액: "+money+"\n"
 				+ "===============";
 	}
-	@Override
+	
 	public void withdraw(int money) {
 	
 		if (money <=0) {
@@ -59,7 +43,7 @@ public class BankBook implements Account{
 		}
 		
 	}
-	@Override
+	
 	public void deposit(int money) {
 		if (money<=0) {
 			msg = "입금은 0보다 커야합니다.";
@@ -67,6 +51,42 @@ public class BankBook implements Account{
 			this.money += money; //누적된 값에서 플러스
 		}
 		
+	}
+
+	public int getBankbookNo() {
+		return bankbookNo;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public int getMoney() {
+		return money;
+	}
+
+	public int getPass() {
+		return pass;
+	}
+
+	public String getMsg() {
+		return msg;
+	}
+
+	public void setBankbookNo(int bankbookNo) {
+		this.bankbookNo = bankbookNo;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setMoney(int money) {
+		this.money = money;
+	}
+
+	public void setMsg(String msg) {
+		this.msg = msg;
 	}
 	
 

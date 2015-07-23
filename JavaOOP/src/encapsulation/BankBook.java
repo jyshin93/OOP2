@@ -45,16 +45,11 @@ public class BankBook implements Account {
 	private String msg; //유효성 체크 결과를 알려줘서 고객이 만약 실수로 입력했다면
 						//공지해주는 역할을 할 것이다.
 /*=====Constructor=====*/
-	public BankBook(String name) { //한번밖에 생성이 안되는 필드들은 constructor밖에서 setter나 getter로 받아들여야한다.
+	public BankBook(String name) { 
 		this.BANK = "아이티뱅크";
-		// 계좌번호는 5자리 숫자
-		// 
 		this.bankbookNo = (int) ((Math.random()*99999)+10000);
-		this.name = name;//외부에서 받는 것은 parameter밖에없다.
+		this.name = name;
 	}
-	//개발자는 setter를 쓸지, 생성자로 끝낼지를 고민한다.
-	// getter setter 단축키 : Alt + SHIFT + S
-	// 절대 바뀌면 안되는 변수는 Setter를 지워야한다!!!!!!!!!!!
 	
 /*=====Member Method=====*/
 	public int  getBankbookNo() {
