@@ -27,7 +27,6 @@ public class BankBook {
 				+ "["+BANK+"]\n"
 				+ "계좌번호 : "+bankbookNo+"\n"
 				+ "이름:" +name+"\n"
-				+ msg
 				+ "잔액: "+money+"\n"
 				+ "===============";
 	}
